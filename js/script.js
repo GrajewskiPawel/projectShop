@@ -1,5 +1,7 @@
 window.onload = function(){
 		var buttonSent = document.getElementsByClassName("buttonSent");
+		var hoverShop = document.getElementById("hoverShop");
+		var shopElement = document.getElementById("shop");
 		var shop = document.getElementById("shopWraper");
 		var chosen = '';
 		var xPrice = document.getElementById("xPrice"); 
@@ -78,4 +80,24 @@ window.onload = function(){
 		addProduct();//function which is activate when click on product button
 		
 		
+	
+	
+	//event on click to toogle height of shopwraper
+	hoverShop.onclick = function(){
+		var shopHeader = document.getElementById('shopHeader');
+		if(shopHeader.style.display === "block"){
+			shopElement.style.height = "0.01%";
+			shopHeader.style.display = 'none';
+			shop.style.display = 'none';
+		}else{
+			shopHeader.style.display = 'block';
+			shop.style.display = 'block';
+			shopElement.style.height = "200px";
+		}
+		
+	
 	};
+	
+	
+	
+	};//window on load event
