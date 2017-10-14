@@ -6,3 +6,4 @@ _notes/
 /node_modules/
 .sass-cache/
 *.css.map
+assets
