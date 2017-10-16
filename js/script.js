@@ -34,7 +34,12 @@ window.onload = function(){
 				var howMuchProduct = document.getElementById(howMuch).value;
 				//protect for set 0 values
 				if(howMuchProduct < 1){
-					return;
+					document.getElementById(howMuch).style.animation = "mynewmove 2s 1";
+					setTimeout(myFunction, 1000);
+					function myFunction(){
+						document.getElementById(howMuch).style.animation = "";
+					}
+				return;
 				}
 				//math on product element
 				var suma = valueProduct * howMuchProduct;

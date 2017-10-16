@@ -84,6 +84,14 @@ html #content, body #content {
   background-color: white;
 }
 
+@keyframes mynewmove {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: white;
+  }
+}
 /* line 1, ../sass/_shopWraper.scss */
 #shop {
   width: 100%;
