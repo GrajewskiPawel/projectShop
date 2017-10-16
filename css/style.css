@@ -77,27 +77,48 @@ html, body {
   padding: 0;
   font-family: Arial;
 }
-
-/* line 11, ../sass/_base.scss */
-#shop {
-  width: 100%;
-  min-height: 0.01%;
-  background-color: #8E8E8E;
-}
-
-/* line 16, ../sass/_base.scss */
-#shopHeader {
-  display: none;
-}
-
-/* line 19, ../sass/_base.scss */
-#content {
+/* line 10, ../sass/_base.scss */
+html #content, body #content {
   width: 100%;
   height: 80%;
   background-color: white;
 }
 
-/* line 24, ../sass/_base.scss */
+/* line 1, ../sass/_shopWraper.scss */
+#shop {
+  width: 100%;
+  min-height: 0.01%;
+  background-color: #8E8E8E;
+}
+/* line 5, ../sass/_shopWraper.scss */
+#shop #shopHeader {
+  display: none;
+}
+/* line 8, ../sass/_shopWraper.scss */
+#shop #shopWraper {
+  width: 100%;
+}
+/* line 10, ../sass/_shopWraper.scss */
+#shop #shopWraper h1 {
+  margin-top: 0;
+  padding-top: 5px;
+}
+/* line 14, ../sass/_shopWraper.scss */
+#shop #shopWraper p {
+  margin-top: 0;
+  padding-top: 5px;
+  margin-left: 50px;
+  text-align: left;
+}
+
+/* line 23, ../sass/_shopWraper.scss */
+#hoverShop {
+  position: fixed;
+  right: 5%;
+  top: 50px;
+}
+
+/* line 1, ../sass/_product.scss */
 .product {
   width: 33.3333%;
   height: 500px;
@@ -105,7 +126,7 @@ html, body {
   float: left;
 }
 
-/* line 30, ../sass/_base.scss */
+/* line 7, ../sass/_product.scss */
 .img {
   width: 70%;
   height: 30%;
@@ -113,35 +134,35 @@ html, body {
   margin: 40px auto;
 }
 
-/* line 36, ../sass/_base.scss */
+/* line 13, ../sass/_product.scss */
 .product h1, p {
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-/* line 41, ../sass/_base.scss */
+/* line 18, ../sass/_product.scss */
 input[type=number] {
   width: 50px;
 }
 
-/* line 44, ../sass/_base.scss */
+/* line 21, ../sass/_product.scss */
 input[name=price] {
   visibility: hidden;
 }
 
-/* line 47, ../sass/_base.scss */
+/* line 24, ../sass/_product.scss */
 .priceNumber {
   margin-left: 25px;
   font-weight: bold;
 }
 
-/* line 51, ../sass/_base.scss */
+/* line 28, ../sass/_product.scss */
 .howMuch {
   margin-right: 25px;
 }
 
-/* line 54, ../sass/_base.scss */
+/* line 31, ../sass/_product.scss */
 .buttonSent {
   padding: 15px;
   border: none;
@@ -151,33 +172,7 @@ input[name=price] {
   margin-right: 20px;
 }
 
-/* line 62, ../sass/_base.scss */
+/* line 39, ../sass/_product.scss */
 .buttonSent:hover {
   background-color: blue;
-}
-
-/* line 65, ../sass/_base.scss */
-#shopWraper {
-  width: 100%;
-}
-
-/* line 68, ../sass/_base.scss */
-#shopWraper h1 {
-  margin-top: 0;
-  padding-top: 5px;
-}
-
-/* line 72, ../sass/_base.scss */
-p {
-  margin-top: 0;
-  padding-top: 5px;
-  margin-left: 50px;
-  text-align: left;
-}
-
-/* line 78, ../sass/_base.scss */
-#hoverShop {
-  position: fixed;
-  right: 5%;
-  top: 50px;
 }

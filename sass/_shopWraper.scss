@@ -1,0 +1,28 @@
+#shop{
+	width:100%;
+	min-height: 0.01%;
+	background-color: #8E8E8E;
+#shopHeader{
+	display: none;
+}	
+#shopWraper{
+		width: 100%;
+		h1{
+			margin-top:0;
+			padding-top: 5px;
+		}
+		p{
+			margin-top:0;
+			padding-top: 5px;
+			margin-left:50px;
+			text-align: left;
+		}
+	}		
+}
+
+#hoverShop{
+	position: fixed;
+	right: 5%;
+	top:50px;
+}
+

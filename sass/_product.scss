@@ -1,2 +1,42 @@
-/* CSS Document */
+.product{
+		width: 33.3333%;
+		height: 500px;
+		border: 1px solid black;
+		float:left;
+	}
+	.img{
+		width: 70%;
+		height: 30%;
+		background-color: lightblue;
+		margin: 40px auto;
+	}
+	.product h1, p{
+		text-align: center;
+		margin-left:5%;
+		margin-right: 5%;
+	}
+	input[type=number]{
+		width: 50px;
+	}
+	input[name=price]{
+		visibility: hidden;
+	}
+	.priceNumber{
+		margin-left: 25px;
+		font-weight: bold;
+	}
+	.howMuch{
+		margin-right: 25px;
+	}
+	.buttonSent{
+		padding: 15px;
+		border:none;
+		background-color:lightblue;
+		float:right;
+		margin-top:20px;
+		margin-right: 20px;
+	}
+	.buttonSent:hover{
+		background-color:blue;
+	}
 
