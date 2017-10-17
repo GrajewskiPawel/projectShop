@@ -6,9 +6,26 @@
 	}
 	.img{
 		width: 70%;
-		height: 30%;
-		background-color: lightblue;
+		height: 150px;
 		margin: 40px auto;
+	}
+	#img1{
+		background-image: url(../img/product1.svg);
+		background-position: center center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	#img2{
+		background-image: url(../img/product2.svg);
+		background-position: center center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	#img3{
+		background-image: url(../img/product3.svg);
+		background-position: center center;
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
 	.product h1, p{
 		text-align: center;

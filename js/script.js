@@ -91,13 +91,14 @@ window.onload = function(){
 	hoverShop.onclick = function(){
 		var shopHeader = document.getElementById('shopHeader');
 		if(shopHeader.style.display === "block"){
-			shopElement.style.height = "0.01%";
+			shopElement.style.minHeight = "";
+			shopElement.style.Height = "0.01%";
 			shopHeader.style.display = 'none';
 			shop.style.display = 'none';
 		}else{
 			shopHeader.style.display = 'block';
 			shop.style.display = 'block';
-			shopElement.style.height = "200px";
+			shopElement.style.minHeight = "200px";
 		}
 		
 	

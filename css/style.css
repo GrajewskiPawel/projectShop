@@ -98,20 +98,21 @@ html #content, body #content {
   min-height: 0.01%;
   background-color: #8E8E8E;
 }
-/* line 5, ../sass/_shopWraper.scss */
+/* line 6, ../sass/_shopWraper.scss */
 #shop #shopHeader {
   display: none;
 }
-/* line 8, ../sass/_shopWraper.scss */
+/* line 9, ../sass/_shopWraper.scss */
 #shop #shopWraper {
   width: 100%;
+  display: none;
 }
-/* line 10, ../sass/_shopWraper.scss */
+/* line 12, ../sass/_shopWraper.scss */
 #shop #shopWraper h1 {
   margin-top: 0;
   padding-top: 5px;
 }
-/* line 14, ../sass/_shopWraper.scss */
+/* line 16, ../sass/_shopWraper.scss */
 #shop #shopWraper p {
   margin-top: 0;
   padding-top: 5px;
@@ -119,7 +120,14 @@ html #content, body #content {
   text-align: left;
 }
 
-/* line 23, ../sass/_shopWraper.scss */
+/* line 24, ../sass/_shopWraper.scss */
+#xPrice {
+  position: fixed;
+  left: 1%;
+  top: 20px;
+}
+
+/* line 29, ../sass/_shopWraper.scss */
 #hoverShop {
   position: fixed;
   right: 5%;
@@ -137,40 +145,63 @@ html #content, body #content {
 /* line 7, ../sass/_product.scss */
 .img {
   width: 70%;
-  height: 30%;
-  background-color: lightblue;
+  height: 150px;
   margin: 40px auto;
 }
 
-/* line 13, ../sass/_product.scss */
+/* line 12, ../sass/_product.scss */
+#img1 {
+  background-image: url(../img/product1.svg);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* line 18, ../sass/_product.scss */
+#img2 {
+  background-image: url(../img/product2.svg);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* line 24, ../sass/_product.scss */
+#img3 {
+  background-image: url(../img/product3.svg);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* line 30, ../sass/_product.scss */
 .product h1, p {
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-/* line 18, ../sass/_product.scss */
+/* line 35, ../sass/_product.scss */
 input[type=number] {
   width: 50px;
 }
 
-/* line 21, ../sass/_product.scss */
+/* line 38, ../sass/_product.scss */
 input[name=price] {
   visibility: hidden;
 }
 
-/* line 24, ../sass/_product.scss */
+/* line 41, ../sass/_product.scss */
 .priceNumber {
   margin-left: 25px;
   font-weight: bold;
 }
 
-/* line 28, ../sass/_product.scss */
+/* line 45, ../sass/_product.scss */
 .howMuch {
   margin-right: 25px;
 }
 
-/* line 31, ../sass/_product.scss */
+/* line 48, ../sass/_product.scss */
 .buttonSent {
   padding: 15px;
   border: none;
@@ -180,7 +211,7 @@ input[name=price] {
   margin-right: 20px;
 }
 
-/* line 39, ../sass/_product.scss */
+/* line 56, ../sass/_product.scss */
 .buttonSent:hover {
   background-color: blue;
 }
