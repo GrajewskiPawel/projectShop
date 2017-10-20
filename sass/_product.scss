@@ -1,7 +1,6 @@
 .product{
 		width: 33.3333%;
 		height: 500px;
-		border: 1px solid black;
 		float:left;
 	}
 	.img{
@@ -46,14 +45,22 @@
 		margin-right: 25px;
 	}
 	.buttonSent{
-		padding: 15px;
-		border:none;
-		background-color:lightblue;
 		float:right;
 		margin-top:20px;
 		margin-right: 20px;
+		border:none;
+		background-color: rgba(35,72,156,1.00);
+		color:white;
+		font-family: arial;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-radius: 10px;
+		transition:0.5s all;
+		&:hover{
+			background-color:lightgreen;
+		}
 	}
-	.buttonSent:hover{
-		background-color:blue;
-	}
+
 

@@ -1,7 +1,9 @@
+@charset "UTF-8";
 #shop{
 	width:100%;
 	min-height: 0.01%;
-	background-color: #8E8E8E;
+	background-color: #E1DFDF;
+	transition: 1s all;
 	
 #shopHeader{
 	display: none;
@@ -23,12 +25,30 @@
 }
 #xPrice{
 	position: fixed;
-	left: 1%;
-	top:20px;
+	right: 50px;
+	top:100px;
+	font-family: arial;
+	&::after{
+		content:quote(zł);
+		font-family: arial;
+	}
 }
 #hoverShop{
 	position: fixed;
-	right: 5%;
+	right: 50px;
 	top:50px;
+	border:none;
+	background-color: rgba(71,156,36,1.00);
+	color:white;
+	font-family: arial;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 10px;
+	transition:0.5s all;
+	&:hover{
+		background-color: rgba(140,236,151,1.00);
+	}
 }
 
